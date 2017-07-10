@@ -1,0 +1,9 @@
+<!--wxml小程序骨架-->
+<view class="container">
+  <image class="user-avatr" src="/images/2.png"></image>
+  <text class="user-name">hello,与谁初见i</text>
+  
+  <view class="moto-container" bindtap="navTap">
+    <text class="moto">开启小程序之旅</text>
+  </view>
+</view>

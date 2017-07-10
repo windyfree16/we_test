@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/post"
+
+  ],
+  "window": {
+    "navigationBarTitleText": "第一个小程序页面",
+    "navigationBarBackgroundColor": "#b3d4db"
+  }
+}
