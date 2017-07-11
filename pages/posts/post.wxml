@@ -1,3 +1,5 @@
+<!--引入模板-->
+<import src="/pages/posts/data-item/data_item_template.wxml" />
 <!--新闻列表-->
 <view>
   <swiper indicator-dots="true" autoplay="true" interval="2000">
@@ -18,23 +20,9 @@
   
   <!--文章内容-->
   <block wx:for="{{data}}" wx:for-item="itemName">
-  <view class="post-container">
-    <view class="post-author-date">
-      <image class="post-author" src="{{itemName.avatar}}"></image>
-      <text class="post-date">{{itemName.date}}</text>
-    </view>
-
-    <text class="post-title">{{itemName.title}}</text>
-    <image class="post-image" src="{{itemName.imgSrc}}"></image>
-    <text class="post-content">{{itemName.content}}</text>
-
-    <view class="post-like">
-      <image class="post-like-image" src="/images/icon/chat1.png"></image>
-      <text class="post-like-font">{{itemName.reading}}</text>
-      <image class="post-like-image" src="/images/icon/view.png"></image>
-      <text class="post-like-font">{{itemName.collection}}</text>
-    </view>
-  </view>
+    <!--使用模板-->
+    <!--数据前面加...代表展开数据-->
+    <template is="postItem" data="{{...itemName}}" />
  </block>
 
 </view>
