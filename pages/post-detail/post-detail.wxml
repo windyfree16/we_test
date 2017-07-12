@@ -1,0 +1,24 @@
+<!--pages/post-detail/post-detail.wxml-->
+<view class="container">
+  <image class="head-image" src="/images/post/sls.jpg"></image>
+  <image class="audio" src="/images/music/music-start.png"></image>
+
+  <view class="author-date">
+    <image class="avatar" src="/images/avatar/3.png"></image>
+    <text class="author">与谁初见</text>
+    <text class="con-text">发表于</text>
+    <text class="date">三天前</text>
+  </view>
+
+  <text class="title">我在学微信小程序</text>
+
+  <view class="tool">
+    <view class="circle-img">
+      <image src="/images/icon/collection-anti.png"></image>
+      <image class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+  </view>
+
+  <text class="detail">谔谔，我是菜鸟，这对于我来说有点难</text>
+</view>

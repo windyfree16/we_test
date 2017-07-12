@@ -1,7 +1,10 @@
 {
   "pages": [
+        "pages/post-detail/post-detail",
     "pages/welcome/welcome",
-    "pages/posts/post"
+    "pages/posts/post",
+
+    "pages/template/data_item_template"
 
   ],
   "window": {

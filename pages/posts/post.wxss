@@ -1,4 +1,4 @@
-@import "data-item/data_item_template.wxss";
+@import "/pages/template/data_item_template.wxss";
 swiper {
   width: 100%;
   height: 600rpx;

@@ -1,5 +1,5 @@
 <!--引入模板-->
-<import src="/pages/posts/data-item/data_item_template.wxml" />
+<import src="/pages/template/data_item_template.wxml" />
 <!--新闻列表-->
 <view>
   <swiper indicator-dots="true" autoplay="true" interval="2000">
@@ -13,16 +13,18 @@
     </swiper-item>
 
     <swiper-item>
-     <image src="/images/vr.png"></image>
+      <image src="/images/vr.png"></image>
     </swiper-item>
 
   </swiper>
-  
+
   <!--文章内容-->
   <block wx:for="{{data}}" wx:for-item="itemName">
     <!--使用模板-->
     <!--数据前面加...代表展开数据-->
-    <template is="postItem" data="{{...itemName}}" />
- </block>
+    <view bindtap="onPostTap" data-postId="{{itemName.postId}}">
+      <template is="postItem" data="{{...itemName}}" />
+    </view>
+  </block>
 
 </view>

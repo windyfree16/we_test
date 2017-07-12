@@ -18,5 +18,15 @@ Page({
       data: postData.postList
     });
 
+  },
+  onPostTap: function (event) {
+    // 获取 id 值
+    var postId = event.currentTarget.dataset.postid;
+
+    // 跳转页面
+    wx.navigateTo({
+      url: '/pages/post-detail/post-detail?id=' + postId,
+    })
+
   }
 })
