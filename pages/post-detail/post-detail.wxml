@@ -5,7 +5,7 @@
 
   <view class="author-date">
     <image class="avatar" src="/images/avatar/3.png"></image>
-    <text class="author">与谁初见</text>
+    <text class="author">{{post.author}}</text>
     <text class="con-text">发表于</text>
     <text class="date">三天前</text>
   </view>
