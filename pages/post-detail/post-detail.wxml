@@ -1,24 +1,25 @@
 <!--pages/post-detail/post-detail.wxml-->
 <view class="container">
-  <image class="head-image" src="/images/post/sls.jpg"></image>
+  <image class="head-image" src="{{info.imgSrc}}"></image>
   <image class="audio" src="/images/music/music-start.png"></image>
 
   <view class="author-date">
     <image class="avatar" src="/images/avatar/3.png"></image>
-    <text class="author">{{post.author}}</text>
+    <text class="author">{{info.author}}</text>
     <text class="con-text">发表于</text>
-    <text class="date">三天前</text>
+    <text class="date">{{info.dateTime}}</text>
   </view>
 
-  <text class="title">我在学微信小程序</text>
+  <text class="title">{{info.title}}</text>
 
   <view class="tool">
     <view class="circle-img">
-      <image src="/images/icon/collection-anti.png"></image>
+      <image wx:if="{{collection}}" bindtap="onCollectionTap" src="/images/icon/collection.png"></image>
+      <image wx:else bindtap="onCollectionTap" src="/images/icon/collection-anti.png"></image>
       <image class="share-img" src="/images/icon/share.png"></image>
     </view>
     <view class="horizon"></view>
   </view>
 
-  <text class="detail">谔谔，我是菜鸟，这对于我来说有点难</text>
+  <text class="detail">{{info.detail}}</text>
 </view>
